@@ -1,17 +1,17 @@
-function Nav(){
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-    return(
-      
+const Nav=()=>{
+  return (
     <nav>
-       
-        <ul>
-            <li><a href="final.html">HOME</a></li>
-            <li><a href="menu.html">MENU</a></li>
-            <li><a href="booking.html">BOOK</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-        </ul>
+      <ul>
+        <li><Link to="/">HOME</Link></li>
+        <li><Link to="/menu">MENU</Link></li>
+        <li><Link to="/booking">BOOK</Link></li>
+        <li><Link to="/about">ABOUT</Link></li>
+      </ul>
     </nav>
-    );
-
+  );
 }
+
 export default Nav;
