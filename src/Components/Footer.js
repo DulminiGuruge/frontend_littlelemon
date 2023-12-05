@@ -1,28 +1,38 @@
 import React from 'react';
-import img_footer from '../assets/logo_footer.png'
+import img_footer from '../assets/logo_footer.png';
+import {Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
     <footer>
+      
       <div id="footer_img">
         
         <img  src={img_footer} alt="Footer" />
       </div>
       <div>
-        <ul>
-          <li>home</li>
-          <li>menu</li>
-          <li>book</li>
-          <li>about us</li>
-           
-        </ul>
-        </div>
+        <h4>Navigation</h4>
+        <br></br>
+         <p></p>
+         <p><Link to="/">Home</Link></p>
+         <p><Link to="/menu">Menu</Link></p>
+         <p><Link to="/bookingpage">Book</Link></p>
+         <p> <Link to="/about">About</Link></p>
+         
+         
+         
+      </div>
+     
       <div className="copyright">
-        <p>Call us - 999 999 999</p>
-        <p>Email - littlelemon@gmail.com</p>
+        <div><p>Phone - 999 999 999</p></div>
+        <br></br>
+        <div><p>Email - Dulmini@littlelemon.com</p></div>
         <br></br>
         <br></br>
-        <p>Copyright © 2023 Little Lemon</p>
+  
+        
+        <div><p>Copyright © 2023 Little Lemon</p></div>
+        
       </div>
     </footer>
   );
