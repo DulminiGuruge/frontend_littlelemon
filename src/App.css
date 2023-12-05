@@ -128,10 +128,10 @@ article button {
 footer {
   display: flex;
   border-width: 5px;
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 20px;
-  background-color:#f5f7f8;
-  color:#45474b;
+  background-color:#495e57;
+  color:#f5f7f8;
 }
 
 footer div {
@@ -139,6 +139,12 @@ footer div {
   margin-left: 5%;
   margin-right: 5%;
   text-align: left;
+}
+
+
+#footer_img img{
+  padding: 5px;
+  background-color:#f5f7f8;
 }
 
 #copyright {
