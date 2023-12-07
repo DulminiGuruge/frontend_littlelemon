@@ -124,6 +124,50 @@ article button {
   margin: 0 auto;
   
 }
+.reservasion_container{
+  display: flex;
+  background-color:#f1f1f1;
+}
+
+.reservasion_form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: auto;
+  
+  margin:35px;
+  padding: 10px;
+  border:2px solid #45474b;
+  background-color: #f5f7f8;
+  background-size: cover;
+  background-position: center;
+}
+
+.reservasion_img{
+  flex: 1;
+  max-width:500px;
+  overflow: hidden;
+
+}
+
+.reservasion_img > img {
+  
+  width: 100%;
+  margin:35px;
+  height: auto;
+  display: block;
+}
+@media (max-width: 600px) {
+  .reservasion_img {
+    display: none;
+  }
+}
+.reservasion_form  div{
+  margin-bottom:10px;
+}
+
+
 
 footer{
   display: flex;
@@ -157,3 +201,4 @@ footer div a{
   border-top: 6px solid #45474b;
   padding-top: 10px; /* Adjusted padding */
 }
+
