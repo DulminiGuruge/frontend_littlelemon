@@ -53,26 +53,33 @@ const BookingForm = () => {
    // onSubmit: (values) => {
    //   alert(JSON.stringify(values, null, 2));
    // },
-   onSubmit: async (values) => {
+   onSubmit: async (values, { setSubmitting }) => {
     try {
-      const response = await fetch('http://localhost:5256/api/Booking', {
+      // Log the data being sent as JSON
+      console.log('Sending data:', JSON.stringify(values));
+  
+      const response = await fetch('https://littlelemondataapi.azurewebsites.net/api/Booking', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(values),
       });
-
+  
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
-
+  
       const result = await response.json();
       console.log('Data posted successfully:', result);
     } catch (error) {
       console.error('Error posting data:', error);
+    } finally {
+      // Reset the form submission status
+      setSubmitting(false);
     }
   },
+  
     
   });
   const [occasion, setOccasion] = React.useState('');
