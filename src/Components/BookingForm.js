@@ -50,9 +50,29 @@ const BookingForm = () => {
       reservasion_time: ''
     },
     validationSchema: validationSchema,
-    onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
-    },
+   // onSubmit: (values) => {
+   //   alert(JSON.stringify(values, null, 2));
+   // },
+   onSubmit: async (values) => {
+    try {
+      const response = await fetch('http://localhost:5256/api/Booking', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(values),
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+
+      const result = await response.json();
+      console.log('Data posted successfully:', result);
+    } catch (error) {
+      console.error('Error posting data:', error);
+    }
+  },
     
   });
   const [occasion, setOccasion] = React.useState('');

@@ -202,3 +202,66 @@ footer div a{
   padding-top: 10px; /* Adjusted padding */
 }
 
+
+
+
+
+/*Menus */
+.main-menu{
+    
+  display: flex;
+  justify-content: center;
+  
+  
+
+}
+
+.desserts{
+  
+  display: flex;
+  justify-content: center;
+  
+  
+
+}
+.beverages{
+  
+  display: flex;
+  justify-content: center;
+  
+ 
+
+}
+
+/* Add rules for the steps mentioned below */
+.menu-section {
+  max-width: 400px;
+padding: 10px;
+  background-color:#E0E0E2;
+  margin-bottom: 20px;
+}
+.menuitem-label {  
+font-weight: bold;
+}
+.menuitem-description {
+  font-style: italic;
+  border-top: 2px solid #495E57;
+}
+.menuitem-name {
+margin: 25px;
+font-size: 12px;
+}
+b {
+  float: right;
+  margin-top: -15px; /* Inside b */
+  color: darkcyan; /* Inside b */
+}
+.menuitem-name > h3 {
+  font-size: 20px;
+  margin: 20px;
+  text-align: center;
+  color: #495E57;
+}
+.menuitem-label + .low {
+color: brown; 
+}
