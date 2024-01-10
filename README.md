@@ -17,3 +17,6 @@ To use Formik,Material UI and YUp.
 >npm install @mui/x-date-pickers
 >npm install @mui/styled-engine-sc styled-components
 
+Note:
+
+Use npm start command to run the react project.
