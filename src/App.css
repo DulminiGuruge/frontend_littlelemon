@@ -48,6 +48,7 @@ body {
 .banner-section {
   position: relative;
   height: 370px;
+
   background-image: url('./assets/banner_img.jpg'); /* Replace 'hero-image.jpg' with the path to your image */
   background-size: cover;
   background-position: center;
@@ -87,9 +88,39 @@ section {
 
 }
 
+#about_us article{
+  background-color:#f5f7f8 ;
+  border: #495E57 solid 2px;
+  color: #495E57;
+
+}
+
+.about_us_row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-bottom: 1rem;
+  background-color:#f5f7f8 ;
+}
+
+.about_us_column {
+  flex-basis: 50%;
+  margin-bottom: 1rem;
+  padding: 10px;
+  padding-bottom: 1rem;
+  background-color:#f5f7f8 ;
+  color: #45474b;
+}
+
+.column figure {
+  padding: 0px 12px;
+
+}
+
 article {
   flex: 1;
   min-width: 300px;
+  max-width: 350px;
   background-color: #495e57;
   color: #f5f7f8;
   padding: 35px;
@@ -203,16 +234,12 @@ footer div a{
 }
 
 
-
-
-
 /*Menus */
 .main-menu{
     
   display: flex;
   justify-content: center;
-  
-  
+  padding: 20px;
 
 }
 
@@ -220,23 +247,19 @@ footer div a{
   
   display: flex;
   justify-content: center;
-  
-  
 
 }
 .beverages{
   
   display: flex;
   justify-content: center;
-  
- 
 
 }
 
 /* Add rules for the steps mentioned below */
 .menu-section {
   max-width: 400px;
-padding: 10px;
+  padding: 10px;
   background-color:#E0E0E2;
   margin-bottom: 20px;
 }
@@ -248,9 +271,10 @@ font-weight: bold;
   border-top: 2px solid #495E57;
 }
 .menuitem-name {
-margin: 25px;
-font-size: 12px;
+  margin: 25px;
+  font-size: 12px;
 }
+
 b {
   float: right;
   margin-top: -15px; /* Inside b */
