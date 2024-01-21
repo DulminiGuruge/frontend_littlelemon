@@ -5,13 +5,15 @@ import mario_adrian from '../assets/mario-and-adrian.jpg';
 
 const About = () => {
     return(
-        <section id="about_us">
-        <article>
+        
+        <div>
+
+            <div class="aboutus_container">
+            
+            <div class="aboutus_description">
+
             <h1>About Us</h1>
-            
-            <div class="about_us_row">
-            
-            <div class="about_us_column">
+
                 <p>
                 Based in Chicago, Illinois, Little Lemon is a family owned
                 Mediterranean restaurant, focused on traditional recipes served with a
@@ -45,14 +47,14 @@ const About = () => {
                 </p>
             </div>
           
-            <div class="about_us_column">
-                <figure class="about_us_figure">
+            <div class="aboutus_image">
+                <figure class="aboutus_figure">
                 
                 <img
                     src= {mario_adrian}
                     alt="Mario and Adrian"
                 />
-                <figcaption class="about_us_figure-caption">
+                <figcaption class="aboutus_figure-caption">
                     Little Lemon owners Mario and Adrian.
                 </figcaption>
                 </figure>
@@ -60,8 +62,8 @@ const About = () => {
             
             </div>
            
-        </article>
-        </section>
+        </div>
+      
     )
 }
 
