@@ -22,13 +22,13 @@ const Main = () => {
 
   return (
     <main>
-      <div className="banner-section">
+      <div class="banner-section">
         <p>Welcome to Little Lemon!<br /><br />Experience a fusion of Italian, Greek, and Turkish cuisine with a modern twist at Little Lemon.</p>
         <button>Call Us - 999 999 999</button>
       </div>
 
-      <section>
-        <article>
+      <section class="main_section">
+        <article id="main_card">
           <h2>Menu</h2>
           <img src={img_menu} alt="menu" />
           <p style={{ textAlign: 'center' }}>Explore the heart of the Mediterranean at Little Lemon. Our Chef curates a menu inspired by <strong>Italy, Greece, and Turkey</strong>.<br /> From pasta to kebabs, indulge in a perfect blend of heritage and innovation.</p>
@@ -36,14 +36,14 @@ const Main = () => {
          
         </article>
 
-        <article>
+        <article id="main_card">
           <h2>Booking</h2>
           <img src={img_people} alt="booking" />
           <p style={{ textAlign: 'center' }}>Are you excited to explore the world of Mediterranean cuisine at Little Lemon? <br /><br />Don't wait any longer, book your table online or give us a call to secure your spot in our cozy haven of culinary delights.</p>
           <button onClick={handleClickBooking}>Reserve Now</button>
         </article>
 
-        <article>
+        <article id="main_card">
           <h2>Hours</h2>
           <img src={img_booking} alt="Hours" />
           <p style={{ textAlign: 'center' }}>We are open from - <br /><br />Monday to Friday from 11.00 am to 10.00 pm<br /> Weekends from 10.00 am to 12.00 pm.<br />In Chicago, Illinois</p>
