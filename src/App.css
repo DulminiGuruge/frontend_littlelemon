@@ -160,7 +160,7 @@ body {
 #main_card {
   flex: 1;
   min-width: 300px;
-  max-width: 350px;
+  max-width: 380px;
   background-color: #495e57;
   color: #f5f7f8;
   padding: 35px;
