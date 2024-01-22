@@ -13,6 +13,8 @@ const About = () => {
             <div class="aboutus_description">
 
             <h1>About Us</h1>
+            <br/>
+            <br/>
 
                 <p>
                 Based in Chicago, Illinois, Little Lemon is a family owned
