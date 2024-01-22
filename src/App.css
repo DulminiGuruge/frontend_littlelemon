@@ -148,18 +148,11 @@ nav a {
 }*/
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
 
-@media screen and (max-width: 768px) {
-  .aboutus_description, .aboutus_image {
-    flex: 100%;
+@media screen and (max-width: 600px) {
+   .aboutus_image {
+    display: none;
   }
   
-  .aboutus_image > img {
-  
-    width: fit-content;
-    margin:35px;
-    height: 600px;
-    display: block;
-  }
 }
 
 
