@@ -3,8 +3,12 @@
   padding: 0;
 }
 body{
-  font-family:Arial, Helvetica, sans-serif
+  font-family:Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f7f8;
 }
+
 
 header {
   background-color: #f5f7f8;;
@@ -17,7 +21,7 @@ header img {
   height: auto;
 }
 
-
+/* Start of navbar */
 nav {
   padding: 20px;
   background-color: #495e57;
@@ -38,12 +42,16 @@ nav a {
   color: #f4ce14;
   font-size: 1.2rem;
 }
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f5f7f8;
+@media screen and (max-width: 600px) {
+  .row, .nav {   
+    flex-direction: column;
+  }
 }
+
+
+/* End of Navbar */
+
+
 
 .banner-section {
   position: relative;
@@ -102,18 +110,20 @@ body {
 
 
 
-/*about us article */
+/*Start of about us article */
+
 .aboutus_container{
   display: flex;
+  
   background-color:#f1f1f1;
 }
 
 .aboutus_description{
-  flex: 1;
+  flex: 60%;
   align-items: center;
   justify-content: center;
   height: auto;
-  max-width: 900px;
+  
   margin:20px;
   padding: 20px;
   border:2px solid #45474b;
@@ -121,32 +131,39 @@ body {
 }
 
 .aboutus_image{
-  
+  flex: 40%;
   margin:10px;
   padding: 10px;
-  max-width:700px;
+  
   overflow: hidden;
 
 }
 
-.aboutus_imgage > img {
+/*.aboutus_image > img {
   
   width: fit-content;
   margin:35px;
   height: 600px;
   display: block;
-}
-@media (max-width: 600px) {
-  .aboutus_imgage > img {
-    display: none;
+}*/
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+
+@media screen and (max-width: 768px) {
+  .aboutus_description, .aboutus_image {
+    flex: 100%;
+  }
+  
+  .aboutus_image > img {
+  
+    width: fit-content;
+    margin:35px;
+    height: 600px;
+    display: block;
   }
 }
-.aboutus_description  div{
-  margin-bottom:10px;
-}
 
 
-/* about us article */
+/* End of about us article */
 
 .main_section {
   display: flex;
@@ -159,8 +176,8 @@ body {
 
 #main_card {
   flex: 1;
-  min-width: 300px;
-  max-width: 380px;
+  min-width: 250px;
+ 
   background-color: #495e57;
   color: #f5f7f8;
   padding: 35px;
@@ -175,6 +192,7 @@ body {
 
 #main_card img {
   width: 100%;
+  max-width: 200px;
   height: auto;
   margin-bottom: 15px;
 }
@@ -195,6 +213,16 @@ body {
   margin: 0 auto;
   
 }
+
+@media screen and (max-width: 600px) {
+  #main_card {   
+    flex: 100%;
+  }
+}
+
+
+/*  Start of Reservation form   */
+
 .reservasion_container{
   display: flex;
   background-color:#f1f1f1;
@@ -229,7 +257,7 @@ body {
   height: auto;
   display: block;
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .reservasion_img {
     display: none;
   }
@@ -238,40 +266,9 @@ body {
   margin-bottom:10px;
 }
 
+/*  End of Reservation form   */
 
 
-footer{
-  display: flex;
-  border-width: 5px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color:#495e57;
-  color:#f5f7f8;
-}
-
-footer div{
-  flex: 1;
-  margin-left: 5%;
-  margin-right: 5%;
-  text-align: left;
-}
-
-footer div a{
-  color:#f5f7f8 ;
-  font-style: none;
-}
-
-
-#footer_img img{
-  padding: 5px;
-  background-color:#f5f7f8;
-}
-
-#copyright {
-  text-align: center;
-  border-top: 6px solid #45474b;
-  padding-top: 10px; /* Adjusted padding */
-}
 
 
 /*Menus */
@@ -329,3 +326,47 @@ b {
 .menuitem-label + .low {
 color: brown; 
 }
+
+
+/* Start of the footer */
+
+footer{
+  display: flex;
+  border-width: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color:#495e57;
+  color:#f5f7f8;
+}
+
+footer div{
+  flex: 1;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: left;
+}
+
+footer div a{
+  color:#f5f7f8 ;
+  font-style: none;
+}
+
+
+#footer_img img{
+  padding: 5px;
+  background-color:#f5f7f8;
+}
+
+#copyright {
+  text-align: center;
+  border-top: 6px solid #45474b;
+  padding-top: 10px; /* Adjusted padding */
+}
+@media (max-width: 600px) {
+  footer div {
+    flex: 100%;
+  }
+}
+
+
+/* End of the footer */
