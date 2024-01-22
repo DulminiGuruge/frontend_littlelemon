@@ -10,7 +10,7 @@ const Footer = () => {
         
         <img  src={img_footer} alt="Footer" />
       </div>
-      <div>
+      <div className="navlinks">
         <h4>Navigation</h4>
         <br></br>
          <p></p>
@@ -24,9 +24,12 @@ const Footer = () => {
       </div>
      
       <div className="copyright">
-        <div><p>Phone - 999 999 999</p></div>
+        <div><p>Phone - </p>
+        <p> 999 999 999</p></div>
         <br></br>
-        <div><p>Email - Dulmini@littlelemon.com</p></div>
+        <div><p>Email - </p>
+        <p>Dul@gmail.com</p>
+        </div>
         <br></br>
         <br></br>
   
